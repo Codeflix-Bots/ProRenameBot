@@ -50,7 +50,7 @@
 
 * `STRING_API_HASH` - Your Premium Account API HASH
 
-* `STRING_SESSION` - Your Premium Account SESSION STRING Generate by [SnowStringGenBot](https://t.me/SnowStringGenBot)
+* `STRING_SESSION` - Your Premium Account SESSION STRING Generate by [SnowStringGenBot](https://t.me/SnowStringGenBot) ⚠️ OPTIONAL VARIABLE
 
 ## Botfather Commands
 ```
