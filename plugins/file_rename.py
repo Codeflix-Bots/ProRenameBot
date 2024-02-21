@@ -1,3 +1,5 @@
+import random
+from helper.ffmpeg import fix_thumb, take_screen_shot
 from pyrogram import Client, filters
 from pyrogram.enums import MessageMediaType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, ForceReply
@@ -89,7 +91,6 @@ async def doc(bot, update):
         return await update.message.edit(f"⚠️ Something went wrong can't able to set Prefix or Suffix ☹️ \n\n❄️ Contact My Creator -> @Snowball_Official\nError: {e}")
 
     file_path = f"downloads/{new_filename}"
-    metadata_path = f"Metadata/{new_filename}"
     file = update.message.reply_to_message
 
     ms = await update.message.edit("⚠️ __**Please wait...**__\n\n**Tʀyɪɴɢ Tᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ....**")
@@ -97,10 +98,11 @@ async def doc(bot, update):
         path = await bot.download_media(message=file, file_name=file_path, progress=progress_for_pyrogram, progress_args=("\n⚠️ __**Please wait...**__\n\n❄️ **Dᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
     except Exception as e:
         return await ms.edit(e)
-    
+
     _bool_metadata = await db.get_metadata(update.message.chat.id)
 
     if (_bool_metadata):
+        metadata_path = f"Metadata/{new_filename}"
         metadata = await db.get_metadata_code(update.message.chat.id)
         if metadata:
 
@@ -122,7 +124,6 @@ async def doc(bot, update):
         await ms.edit("**Metadata added to the file successfully ✅**\n\n⚠️ __**Please wait...**__\n\n**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
     else:
         await ms.edit("⚠️  __**Please wait...**__\n\n\n**Tʀyɪɴɢ Tᴏ Uᴩʟᴏᴀᴅɪɴɢ....**")
-    
 
     duration = 0
     try:
@@ -131,7 +132,7 @@ async def doc(bot, update):
         if metadata.has("duration"):
             duration = metadata.get('duration').seconds
         parser.close()
-        
+
     except:
         pass
     ph_path = None
@@ -151,24 +152,21 @@ async def doc(bot, update):
     if (media.thumbs or c_thumb):
         if c_thumb:
             ph_path = await bot.download_media(c_thumb)
+            width, height, ph_path = await fix_thumb(ph_path)
         else:
-            ph_path = await bot.download_media(media.thumbs[0].file_id)
-        # Open the image file
-        with Image.open(ph_path) as img:
-            # Convert the image to RGB format and save it back to the same file
-            img.convert("RGB").save(ph_path)
-        
-            # Resize the image
-            resized_img = img.resize((320, 320))
-            
-            # Save the resized image in JPEG format
-            resized_img.save(ph_path, "JPEG")
+            try:
+                ph_path_ = await take_screen_shot(file_path, os.path.dirname(os.path.abspath(file_path)), random.randint(0, duration - 1))
+                width, height, ph_path = await fix_thumb(ph_path_)
+            except Exception as e:
+                ph_path = None
+                print(e)
 
     type = update.data.split("_")[1]
 
     if media.file_size > 2000 * 1024 * 1024:
         try:
             if type == "document":
+
                 filw = await app.send_document(
                     Config.LOG_CHANNEL,
                     document=metadata_path if _bool_metadata else file_path,
@@ -190,6 +188,8 @@ async def doc(bot, update):
                     video=metadata_path if _bool_metadata else file_path,
                     caption=caption,
                     thumb=ph_path,
+                    width=width,
+                    height=height,
                     duration=duration,
                     progress=progress_for_pyrogram,
                     progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
@@ -244,6 +244,8 @@ async def doc(bot, update):
                     video=metadata_path if _bool_metadata else file_path,
                     caption=caption,
                     thumb=ph_path,
+                    width=width,
+                    height=height,
                     duration=duration,
                     progress=progress_for_pyrogram,
                     progress_args=("⚠️ __**Please wait...**__\n\n🌨️ **Uᴩʟᴏᴅ Sᴛᴀʀᴛᴇᴅ....**", ms, time.time()))
