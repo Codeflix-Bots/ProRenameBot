@@ -1,7 +1,7 @@
 {
   "name": "Snow Renamer Bot",
   "description": "Telegram File Renamer Bot ",
-  "logo": "https://telegra.ph/file/3b7050b8b5d918a00b490.jpg",
+  "logo": "https://graph.org/file/f47f124a14461141f7b26.jpg",
   "keywords": [
     "Renamer Bot",
     "Mongo DB",
@@ -10,7 +10,7 @@
     "Rename",
     "File Rename"
   ],
-  "repository": "https://github.com/Snowball-0/Sigma-Snow-Bot",
+  "repository": "https://github.com/Codeflix-Bots/ProRenameBot",
   "success_url": "",
   "stack": "container",
   "env": {
