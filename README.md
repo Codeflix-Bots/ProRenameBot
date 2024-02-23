@@ -56,33 +56,20 @@ python3 bot.py
 
 
 
-## Configs 
-
-* `BOT_TOKEN`  - Get Bot Token From @BotFather
-
-* `API_ID` - From my.telegram.org 
-
-* `API_HASH` - From my.telegram.org
-
-* `WEBHOOK` - If Your Server Is Need Web Service! Value = `True` Else Value = `False`
-
-* `ADMIN` - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split 
-
-* `DB_URL`  - Mongo Database URL From https://cloud.mongodb.com
-
-* `DB_NAME`  - Your Database Name From Mongodb. 
-
-* `FORCE_SUB` - Your Force Sub Channel Username Without @
-
-* `LOG_CHANNEL` - Bot Logs Sending Channel. If You Don't Need This To Remove This Variable In Your Server
-
-* `START_PIC` - Start Message Photo. You Don't Need This! Just Skip
-
-* `STRING_API_ID - Your Premium Account API ID
-
-* `STRING_API_HASH` - Your Premium Account API HASH
-
-* `STRING_SESSION` - Your Premium Account SESSION STRING Generate by [SnowStringGenBot](https://t.me/SnowStringGenBot) ⚠️ OPTIONAL VARIABLE
+## - ᴇɴᴠɪʀᴏɴᴍᴇɴᴛ ᴠᴀʀɪᴀʙʟᴇs
+  - `API_ID` - Your Telegram API ID.
+  - `API_HASH` - Your Telegram API HASH.
+  - `TOKEN` - Get it from BotFather.
+  - `ADMIN` - Your ID
+  - `DB_URL` - Enter Mongodb database URL
+  - `DB_NAME` - Enter Mongodb database URL Name
+  - `FORCE_SUB` - Force subscribe channel username without `@`
+  - `LOG_CHANNEL` - Log Channel ID.
+  - `START_PIC` - Start Message Photo. You Don't Need This! Just Skip
+  - `WEBHOOK` -  If Your Server Is Need Web Service! Value = True Else Value = False
+- `STRING_API_ID` - Your Premium Account API ID
+- `STRING_API_HASH` - Your Premium Account API HASH
+- `STRING_SESSION` - Your Premium Account SESSION STRING Generate by [SnowStringGenBot](https://t.me/SnowStringGenBot) ⚠️ OPTIONAL VARIABLE
 
 ## Botfather Commands
 ```
