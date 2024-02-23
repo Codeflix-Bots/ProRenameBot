@@ -11,17 +11,48 @@
 
 
 
-## Deploy To Render              
+<details>
+<summary><h3>
+- <b> ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ᴍᴇᴛʜᴏᴅs </b>
+</h3></summary>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
+</h3>
 
-[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/Snowball-0/Sigma-Snow-Bot)
-
-## Deploy To Railway
-
-<a href="https://graph.org/file/fabd75cd5043d2cfdc13d.jpg"><img src="https://railway.app/button.svg" alt="Deploy"></a>
-
-## Deploy To Heroku
-
-<a href="https://heroku.com/deploy?template=https://github.com/Snowball-0/Sigma-Snow-Bot"><img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy"></a>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/erotixe/RenameBot">
+  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy On Heroku">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴋᴏʏᴇʙ 」─
+</h3>
+<p align="center"><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/erotixe/RenameBot&branch=main&name=RenameBot">
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy On Koyeb">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴀɪʟᴡᴀʏ 」─
+</h3>
+<p align="center"><a href="https://railway.app/deploy?template=https://github.com/erotixe/RenameBot"">
+     <img height="45px" src="https://railway.app/button.svg">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʀᴇɴᴅᴇʀ 」─
+</h3>
+<p align="center"><a href="https://render.com/deploy?repo=https://github.com/erotixe/RenameBot">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a></p>
+<h3 align="center">
+    ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ᴠᴘs 」─
+</h3>
+<p>
+<pre>
+git clone https://github.com/erotixe/RenameBot
+# Install Packages
+pip3 install -U -r requirements.txt
+Edit info.py with variables as given below then run bot
+python3 bot.py
+</pre>
+</p>
+</details>
 
 
 
