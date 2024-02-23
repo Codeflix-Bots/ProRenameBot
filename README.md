@@ -69,7 +69,7 @@ python3 bot.py
   - `WEBHOOK` -  If Your Server Is Need Web Service! Value = True Else Value = False
 - `STRING_API_ID` - Your Premium Account API ID
 - `STRING_API_HASH` - Your Premium Account API HASH
-- `STRING_SESSION` - Your Premium Account SESSION STRING Generate by [SnowStringGenBot](https://t.me/SnowStringGenBot) ⚠️ OPTIONAL VARIABLE
+- `STRING_SESSION` - Your Premium Account SESSION STRING (OPTIONAL VARIABLE)
 
 ## Botfather Commands
 ```
