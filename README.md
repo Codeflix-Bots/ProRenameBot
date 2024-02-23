@@ -1,13 +1,14 @@
-<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
-
-# 𝐒𝐈𝐆𝐌𝐀 𝐒𝐍𝐎𝐖 𝐁𝐎𝐓
-
-
-### Sᴀᴍᴩʟᴇ Bᴏᴛ (Official Sɪɢᴍᴀ Sɴᴏᴡ Bᴏᴛ)
-
 <p align="center">
-🤖 <a href="https://t.me/SigmaSnowBot"><img title="Telegram" src="https://img.shields.io/static/v1?label=SigmaSnow&message=BOT&color=blue-green"></a> 🤖
+<img src="https://graph.org/file/f47f124a14461141f7b26.jpg" alt="logo" target="/blank">
+
+<h2 align="center">
+  ─「 ᴘʀᴏ ʀᴇɴᴀᴍᴇ  ʙᴏᴛ 」─
+</h2>
+
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=ᴡᴇʟᴄᴏᴍᴇ+ᴛᴏ+𝟺ɢʙ+ʀᴇɴᴀᴍᴇ+ʙᴏᴛ!;ᴄʀᴇᴀᴛᴇᴅ+ʙʏ+ᴛᴇᴀᴍ+ɴᴇᴛғʟɪx!;ᴀ+ᴀᴍᴀᴢɪɴɢ+𝟺ɢʙ+ʀᴇɴᴀᴍᴇ+ʙᴏᴛ!)</p>
 </p>
+
 
 
 ## Deploy To Render              
